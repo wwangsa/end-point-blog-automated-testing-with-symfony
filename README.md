@@ -1,6 +1,4 @@
 # end-point-blog-automated-testing-with-symfony
-Companion demo application for a blog post about automated testing using the Symfony PHP framework published in the endpoint.com/blog blog.
-
 Learning unit testing from this [article](https://www.endpointdev.com/blog/2020/09/automated-testing-with-symfony/). 
 The [author's repo](https://github.com/megakevin/end-point-blog-automated-testing-with-symfony) missing versioning 
 
