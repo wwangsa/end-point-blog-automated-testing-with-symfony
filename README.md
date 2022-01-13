@@ -1,6 +1,6 @@
 # end-point-blog-automated-testing-with-symfony
 Learning unit testing from this [article](https://www.endpointdev.com/blog/2020/09/automated-testing-with-symfony/). 
-The [author's repo](https://github.com/megakevin/end-point-blog-automated-testing-with-symfony) missing versioning 
+The [author's repo](https://github.com/megakevin/end-point-blog-automated-testing-with-symfony) didn't specify php version used in the Dockerfile. Upon building it, it will pull PHP 8 and it has lots of compatibilities issues with Symfony libraries.
 
 If the repo still not doing the job, try the commands below
 Here how to get the app running in docker container
