@@ -16,7 +16,7 @@ ARG GID=1000
 RUN apt-get update && apt-get install -y software-properties-common wget curl sqlite3
 
 RUN add-apt-repository ppa:ondrej/php
-RUN apt-get update && apt-get install -y php composer php-xdebug php-sqlite3 php-xml php-curl
+RUN apt-get update && apt-get install -y php7.4 composer php-xdebug php7.4-sqlite3 php7.4-xml php7.4-curl php7.4-mbstring
 
 # Configuring Xdebug
 RUN echo "xdebug.remote_enable=on" >> /etc/php/7.4/mods-available/xdebug.ini
