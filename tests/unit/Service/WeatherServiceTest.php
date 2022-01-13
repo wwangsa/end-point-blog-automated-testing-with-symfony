@@ -284,6 +284,7 @@ class WeatherServiceTest extends TestCase
         $mockRepository = $this->createMock(WeatherQueryRepository::class);
 
         $mockApiClient = $this->createMock(WeatherApiClient::class);
+        // This mock client will always return false
         $mockApiClient->method('getCurrentWeather')->willReturn([
             'success' => false
         ]);
