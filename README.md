@@ -7,14 +7,18 @@ Here how to get the app running in docker container
 On the host
 ```shell
 
+    mkdir ~/test
+    cd ~/test
+    git clone https://github.com/megakevin/end-point-blog-automated-testing-with-symfony.git
+    
   # Build the image with (replace USER accordingly):
-  #   docker build --build-arg USER=kevin --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t weather-app .
-  #
-  # Run a container based on the image:
-  #   docker run -d --name weather-app --network host -v ${PWD}:/workspaces/weather-app weather-app
-  #
+     docker build --build-arg USER=kevin --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t weather-app .
+  
+  # Run a container based on the image. Note: the test folder is mapped to the container.
+     docker run -d --name weather-app --network host -v ${PWD}:/workspaces/weather-app weather-app
+  
   # Connect to the container:
-  #   docker exec -it weather-app bash
+     docker exec -it weather-app bash
 ```
 
 On the container's bash
@@ -31,4 +35,4 @@ On the container's bash
         php bin/console doctrine:schema:create
         composer serve
  ```
- The site is running on localhost:3000
+ The site is running on localhost:3000 and the temperature is in Kelvin
