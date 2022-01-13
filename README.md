@@ -37,3 +37,11 @@ On the container's bash
         composer serve
  ```
  The site is running on localhost:3000 and the temperature is in Kelvin
+
+To run the test
+```shell
+    bin/phpunit tests/unit/Entity/WeatherQueryTest.php
+    #Using testdox style for readble unit tests
+    bin/phpunit --testdox tests/unit/Entity/WeatherQueryTest.php
+
+```
