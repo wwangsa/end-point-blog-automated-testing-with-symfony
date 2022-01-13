@@ -9,7 +9,8 @@ On the host
 
     mkdir ~/test
     cd ~/test
-    git clone https://github.com/megakevin/end-point-blog-automated-testing-with-symfony.git
+    git clone https://github.com/megakevin/end-point-blog-automated-testing-with-symfony.git weather-app
+    cd ~/test/weather-app
     
   # Build the image with (replace USER accordingly):
      docker build --build-arg USER=kevin --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t weather-app .
